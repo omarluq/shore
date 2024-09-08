@@ -6,13 +6,14 @@ gem "bootsnap", "~> 1.18", ">= 1.18.3", require: false
 gem "jbuilder", "~> 2.12"
 gem "pg", "~> 1.5", ">= 1.5.6"
 gem "puma", "~> 6.4", ">= 6.4.2"
-gem "rails", "~> 7.1", ">= 7.1.3.4"
+gem "rails", "~> 7.2"
 gem "solid_queue", "~> 0.3.0"
 gem "stimulus-rails", "~> 1.3", ">= 1.3.3"
 gem "turbo-rails", "~> 2.0", ">= 2.0.5"
 gem "tzinfo-data", "~> 1.2024", ">= 1.2024.1", platforms: %i[windows jruby]
 gem "vite_rails", "~> 3.0", ">= 3.0.17"
-gem "phlex-rails", "~> 1.2"
+gem "phlex-rails", github: "phlex-ruby/phlex-rails", branch: "main"
+gem "phlex_ui", github: "PhlexUI/phlex_ui", branch: "main"
 gem "devise", "~> 4.9"
 
 group :development, :test do

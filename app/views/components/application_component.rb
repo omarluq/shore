@@ -2,6 +2,7 @@
 
 class ApplicationComponent < Phlex::HTML
   include Phlex::Rails::Helpers::Routes
+  include PhlexUI
 
   if Rails.env.development?
     def before_template

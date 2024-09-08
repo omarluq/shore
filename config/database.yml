@@ -8,10 +8,10 @@ default: &default
   timeout: 5000
 development:
   <<: *default
-  database: shore_development
+  database: nge_development
 test:
   <<: *default
-  database: shore_test
+  database: nge_test
 production:
   <<: *default
-  database: shore_production
+  database: nge_production
